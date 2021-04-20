@@ -1,0 +1,126 @@
+* {
+  font-family: "Roboto", sans-serif; }
+
+.container-main {
+  padding: 50px 0px;
+  width: 100%;
+  background-color: #f5f5f5; }
+  .container-main .show-product {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f5f5f5; }
+    .container-main .show-product .img-pro,
+    .container-main .show-product .info-product {
+      flex-basis: 60%;
+      background-color: #fff; }
+    .container-main .show-product .img-pro {
+      flex-basis: 40%;
+      padding: 15px; }
+      .container-main .show-product .img-pro img {
+        width: 100%; }
+    .container-main .show-product .info-product {
+      padding: 10px;
+      border-left: 2px solid #f2f2f2; }
+      .container-main .show-product .info-product .name-pro {
+        font-weight: 300;
+        font-size: 24px; }
+      .container-main .show-product .info-product .wrap-info {
+        margin-top: 15px;
+        background-color: #eef8ff;
+        padding: 15px; }
+        .container-main .show-product .info-product .wrap-info p {
+          padding: 5px 0px;
+          color: #736b62; }
+          .container-main .show-product .info-product .wrap-info p i {
+            padding-right: 5px; }
+        .container-main .show-product .info-product .wrap-info .price-pro {
+          font-size: 32px;
+          font-weight: bold;
+          background: -webkit-linear-gradient(#30698c, #6ca6d9);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        .container-main .show-product .info-product .wrap-info .unit-pro span {
+          font-weight: 600;
+          color: #ce2020; }
+      .container-main .show-product .info-product button {
+        margin: 15px 0px;
+        padding: 10px;
+        border: 1px solid #2f8dd2;
+        background-color: #2f8ed21a;
+        color: #2f8dd2; }
+      .container-main .show-product .info-product button:hover {
+        transition: 0.5s;
+        background: linear-gradient(106deg, #30698c 0%, #6ca6d9 100%);
+        color: #fff;
+        cursor: pointer; }
+      .container-main .show-product .info-product .rating-star {
+        display: flex; }
+        .container-main .show-product .info-product .rating-star li {
+          padding-right: 3px; }
+    .container-main .show-product .describe {
+      margin-top: 30px;
+      flex-basis: 100%; }
+      .container-main .show-product .describe h5 {
+        font-size: 20px;
+        border-bottom: 2px #000 solid;
+        display: inline-block;
+        text-transform: uppercase; }
+      .container-main .show-product .describe p {
+        padding: 15px; }
+      .container-main .show-product .describe .clip {
+        width: 80%;
+        margin: 0px auto; }
+
+.same-product {
+  background-color: #f5f5f5; }
+
+.container-same-product {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 15px;
+  background-color: #fff; }
+  .container-same-product .hot-item {
+    width: 100%; }
+    .container-same-product .hot-item .title-section {
+      border-bottom: 2px solid #ececec; }
+      .container-same-product .hot-item .title-section img {
+        width: 190px;
+        height: 24px; }
+
+.grid-view-item {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 5px 5px;
+  margin-top: 15px; }
+  .grid-view-item .item-represent {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  .grid-view-item .grid-item {
+    background-color: #cedef2;
+    text-align: left;
+    padding: 12px 16px;
+    padding-bottom: unset;
+    font-size: 30px;
+    border-radius: 5px; }
+    .grid-view-item .grid-item .thumbnail img {
+      width: 100%; }
+    .grid-view-item .grid-item .info h5 {
+      font-weight: 300;
+      font-size: 16px; }
+    .grid-view-item .grid-item .info p {
+      font-weight: 600;
+      font-size: 22px; }
+    .grid-view-item .grid-item .more-pro {
+      text-align: right; }
+      .grid-view-item .grid-item .more-pro p {
+        color: #939393;
+        font-size: 14px; }
+
+.check {
+  color: #f2cb05; }

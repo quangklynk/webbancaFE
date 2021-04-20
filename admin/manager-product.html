@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/admin/manager-product.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-main">
+        <div id="list-product" class="tabcontent">
+          <div class="container-table">
+            <table class="table table-bordered table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Product Name</th>
+                  <th>Price</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Description</th>
+                  <th>Remark</th>
+                  <th>Distributor</th>
+                  <th>view</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>cá nè</td>
+                  <td>10000</td>
+                  <td>12/09/1999</td>
+                  <td>55</td>
+                  <td>john@example.com</td>
+                  <td>1</td>
+                  <td>vietfood</td>
+                  <td>79</td>
+                  <td>
+                    <button type="button" class="btn btn-success">
+                      Success
+                    </button>
+                    <button type="button" class="btn btn-danger">Xóa</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>cá nè</td>
+                  <td>10000</td>
+                  <td>12/09/1999</td>
+                  <td>55</td>
+                  <td>john@example.com</td>
+                  <td>1</td>
+                  <td>vietfood</td>
+                  <td>79</td>
+                  <td>
+                    <button type="button" class="btn btn-success">
+                      Success
+                    </button>
+                    <button type="button" class="btn btn-danger">Xóa</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>cá nè</td>
+                  <td>10000</td>
+                  <td>12/09/1999</td>
+                  <td>55</td>
+                  <td>john@example.com</td>
+                  <td>1</td>
+                  <td>vietfood</td>
+                  <td>79</td>
+                  <td>
+                    <button type="button" class="btn btn-success">
+                      Success
+                    </button>
+                    <button type="button" class="btn btn-danger">Xóa</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="creat-product" class="tabcontent">
+          <div class="container-form">
+            <form action="" id="form-product" method="POST">
+              <div class="left-main">
+                <div class="profile-images">
+                  <img src="../imgs/bg-01.jpg" id="upload-img" />
+                </div>
+                <div class="custom-file">
+                  <label for="fileupload">Upload Avatar</label>
+                  <input type="file" id="fileupload" />
+                </div>
+                <div class="notifi">
+                  <label for=""
+                    >Dụng lượng file tối đa 1 MB Định dạng:.JPEG, .PNG</label
+                  >
+                </div>
+              </div>
+              <div class="right-main">
+                <div class="item-form">
+                  <label for="">Tên sản phẩm</label>
+                  <input type="text" id="name" />
+                </div>
+                <div class="item-form">
+                  <label for="">Giá</label>
+                  <input type="text" id="name" />
+                </div>
+                <div class="item-form">
+                  <label for="">Ngày Nhập</label>
+                  <input type="text" id="phone" />
+                </div>
+                <div class="item-form">
+                  <label for="">Số Lượng</label>
+                  <input type="text" id="phone" />
+                </div>
+                <div class="item-form">
+                  <label for="">Mô tả</label>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="item-form">
+                  <label for="" class="title-radio">
+                    <span>Quảng Cáo</span>
+                  </label>
+                  <div class="container-bnt">
+                    <label for="a" class="contain-radio-bnt">
+                      <input type="radio" name="type-acc" id="a" />
+                      <span>Có</span>
+                    </label>
+                    <label for="b" class="contain-radio-bnt">
+                      <input type="radio" name="type-acc" id="b" checked />
+                      <span>Không</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="item-form">
+                  <label for="">Nhà Phân Phối</label>
+                  <input type="text" id="phone" />
+                </div>
+                <div class="item-form btn">
+                  <button type="button" id="btn-submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="control-tab">
+          <button
+            class="btn-control-tab"
+            onclick="openTab('list-product', this, 'red')"
+            id="defaultOpen"
+          >
+            List product
+          </button>
+          <button
+            class="btn-control-tab"
+            onclick="openTab('creat-product', this, 'green')"
+          >
+            Paris
+          </button>
+        </div>
+
+        <script>
+          function openTab(tab_product, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("btn-control-tab");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(tab_product).style.display = "block";
+            elmnt.style.backgroundColor = color;
+          }
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          $(document).ready(function () {
+            $("#fileupload").change(function (event) {
+              var x = URL.createObjectURL(event.target.files[0]);
+              $("#upload-img").attr("src", x);
+            });
+          });
+        </script>
+      </div>
+    </main>
+  </body>
+</html>

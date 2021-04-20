@@ -1,0 +1,140 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box; }
+
+p {
+  display: inline-block; }
+
+.container-main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f5f5; }
+  .container-main .title {
+    padding: 30px 15px;
+    border-bottom: 1px solid #000; }
+    .container-main .title h3 {
+      font-size: 22px;
+      font-weight: 600;
+      padding: unset;
+      margin: unset; }
+    .container-main .title p {
+      font-size: 16px;
+      margin: unset;
+      margin-top: 5px; }
+  .container-main .form-customer {
+    padding: 30px; }
+    .container-main .form-customer form {
+      display: flex;
+      flex-wrap: wrap; }
+      .container-main .form-customer form .left-main {
+        flex-basis: 70%; }
+        .container-main .form-customer form .left-main .item-form {
+          padding: 15px 10px; }
+          .container-main .form-customer form .left-main .item-form input:not(input[type="radio"]):focus {
+            border-color: rgba(0, 0, 0, 0.54); }
+          .container-main .form-customer form .left-main .item-form label {
+            display: inline-block;
+            width: 120px;
+            text-align: right;
+            padding-right: 20px;
+            font-size: 20px;
+            font-weight: 500; }
+          .container-main .form-customer form .left-main .item-form .email {
+            font-style: italic;
+            color: #1044f1; }
+          .container-main .form-customer form .left-main .item-form .container-bnt {
+            display: inline-block; }
+          .container-main .form-customer form .left-main .item-form .contain-select {
+            display: inline-block;
+            width: 70%; }
+            .container-main .form-customer form .left-main .item-form .contain-select select {
+              width: 30%;
+              height: 25px;
+              border: 1px solid rgba(0, 0, 0, 0.14); }
+          .container-main .form-customer form .left-main .item-form button {
+            padding: 10px;
+            border: 1px solid #2f8dd2;
+            background-color: #2f8ed21a;
+            color: #2f8dd2;
+            border-radius: 4px;
+            font-size: 16px; }
+          .container-main .form-customer form .left-main .item-form button:hover {
+            background-color: #2f8dd2;
+            color: #fff;
+            cursor: pointer; }
+          .container-main .form-customer form .left-main .item-form button:active {
+            transform: scale(1.2); }
+      .container-main .form-customer form .btn {
+        margin-left: 123px; }
+      .container-main .form-customer form .right-main {
+        flex-basis: 30%;
+        border-left: 1px solid #948d8d; }
+        .container-main .form-customer form .right-main .notifi {
+          padding: 15px;
+          text-align: center;
+          color: rgba(0, 0, 0, 0.479); }
+
+.date-select {
+  position: relative; }
+  .date-select #error-date {
+    position: absolute;
+    color: red;
+    font-size: 15px;
+    display: none;
+    width: inherit;
+    padding-left: 125px; }
+
+.item-form input:not(input[type="radio"]) {
+  width: 70%;
+  padding: 12px 10px;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: text;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+.item-form .error-input {
+  border: 1px solid red !important;
+  background-color: #ffb1b1 !important; }
+
+.profile-images {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto; }
+  .profile-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.custom-file input[type="file"] {
+  display: none; }
+.custom-file label {
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+  display: table;
+  margin: auto;
+  margin-top: 15px; }
+.custom-file label::after {
+  content: "\f304";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 5px;
+  color: rgba(32, 31, 31, 0.397); }
+
+/*# sourceMappingURL=account-customer.css.map */
