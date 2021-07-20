@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bill.css" />
+
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+            let total_pro = 0;
+            let index = 0;
+            let money = 0;
+        $(".item-product").each(function (index, value) {
+            total_pro = +total_pro + +$(this).find(".product-price").children().text();
+            index = +index + +$(this).find(".product-quantity").children().text();
+            total_pro = +total_pro * +index;
+            $(".product-amount-p").text(total_pro);
+            money = +money + +total_pro;
+        });
+        $(".money-buy").text(money);
+        
+        $("input[type=radio]").click(function (e) { 
+            if ($(this).is(":checked")) {
+                $(".btn-primary").removeClass("disabled");
+            }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <main>
+      <div class="container-main">
+        <div class="info-customer">
+          <div class="title">
+            <h1>Địa Chỉ Nhận Hàng</h1>
+          </div>
+          <div class="customer-address">
+            <p>Trương Minh Quang</p>
+            <p>0775195882</p>
+            <p>
+              9, đường Miễu Ông, ấp Bình Ý, Xã Tân Bình, Huyện Vĩnh Cửu, Đồng
+              Nai
+            </p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="header-cart">
+            <div class="product-name">
+              <label for=""> Sản phẩm </label>
+            </div>
+            <div class="product-price">
+              <p>Đơn Giá</p>
+            </div>
+            <div class="product-quantity">
+              <p>Số lượng</p>
+            </div>
+            <div class="product-amount">
+              <p>Thành tiền</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-ofCart">
+          <div class="item-product">
+            <div class="product-name list-name-img">
+              <div class="product-img">
+                <img src="imgs/find_user.png" alt="" />
+              </div>
+              <label for="">
+                Occaecati omnis dolorem placeat quaerat aut quae ea architecto.
+                Deleniti harum expedita cumque eligendi dolore et molestiae
+                dolorum sit. Quia autem aut provident minus minima. Nulla id qui
+                provident. Facere et velit aut deserunt voluptas officia
+                delectus sint animi. Doloribus omnis qui rerum reprehenderit qui
+                dignissimos quidem omnis illo.
+              </label>
+            </div>
+            <div class="product-price">
+              <p>69000</p>
+            </div>
+            <div class="product-quantity">
+              <p>3</p>
+            </div>
+            <div class="product-amount">
+              <p class="product-amount-p"></p>
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="tilte-payment">
+            <h3>Phương Thức Thanh Toán</h3>
+          </div>
+          <div class="choose-payment">
+            <div class="radio">
+              <label
+                ><input type="radio" name="optradio" /><i
+                  class="fas fa-truck"
+                ></i>
+                Thanh toán trực tiếp</label
+              >
+            </div>
+            <div class="radio">
+              <label
+                ><input type="radio" name="optradio" /><i
+                  class="fab fa-cc-paypal"
+                ></i>
+                Thanh toán online</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bill">
+          <div class="detail-bill">
+            <p>Tổng tiền hàng: <span class="money-buy"></span> đ</p>
+            <p class="total">
+              Tổng thanh toán: <span class="money-all">123123</span>
+            </p>
+          </div>
+          <div id="buy-it">
+            <button class="btn btn-primary disabled" >Mua hàng</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="" async defer></script>
+  </body>
+</html>
