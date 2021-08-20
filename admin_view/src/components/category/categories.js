@@ -69,7 +69,7 @@ function themLoaiSanPham() {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Your work has been saved",
+                    title: "Thêm loại sản phẩm thành công",
                     showConfirmButton: false,
                     timer: 1500,
                 });
@@ -186,7 +186,7 @@ function capNhatLSP() {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Your work has been saved",
+                    title: "Thêm loại thành công",
                     showConfirmButton: false,
                     timer: 1500,
                 });

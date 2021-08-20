@@ -13,6 +13,7 @@ class Home extends MY_Controller {
 		$this->load->model('product_model');
 		$input = array();
 		$input['where'] = array('Remark' => '1');
+		$input['where'] = array('flag !=' => '0');
 		$input['limit'] = array(10,0);
 
 		$product_newest = $this->product_model->get_list($input);
@@ -28,6 +29,7 @@ class Home extends MY_Controller {
 	    $this->load->model('product_model');
 	    $input2 = array();
 	    $input2['limit'] = array(9,0);
+		$input2['where'] = array('flag !=' => '0');
 	    $input2['order'] = array('Date', 'DESC');
 	    $product_buy = $this->product_model->get_list($input2);
 		$this->data['product_new']  = $product_buy;

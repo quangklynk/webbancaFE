@@ -376,6 +376,8 @@ class User extends MY_Controller
             $this->db->set('Status', '3');
             $this->db->where('id', $order_id);
             $this->db->update('orders');
+
+
             $result = "Hủy thành công";
             echo json_encode($result);      //trả về response dưới dạng json
         }

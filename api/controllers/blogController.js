@@ -7,7 +7,6 @@ exports.createNewBlog = asyncMiddleware(async (req, res, next) => {
 	const dataImage = req.file.filename;
 	const date = new Date();
 	const user = req.account.email;
-  
 	mysql.query(
 	  "SELECT * FROM employees WHERE employees.email = ?",
 	  [user],
@@ -15,7 +14,6 @@ exports.createNewBlog = asyncMiddleware(async (req, res, next) => {
 		if (err) {
 		  return next(new ErrorResponse(500, err.sqlMessage));
 		}
-  
 		mysql.query(
 		  "INSERT INTO blog(idEmployee,image,date,titleBlog,contentBlog) VALUES (?,?,?,?,?)",
 		  [result[0].id, dataImage, date, title, content],
